@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
   return (
@@ -10,12 +11,16 @@ const Header = () => {
         <li className='text-lg font-semibold'>FAQ</li>
         <li className='text-lg font-semibold'>About</li>
       </ul>
-      <div>
-        
+      
+      <div className='flex items-center gap-3'>
+        <div className='lg:hidden inline-block cursor-pointer'>
+        <IoMenu size={30} />
       </div>
-      <button className='bg-black text-white p-2 text-lg font-semibold rounded-lg'>
+       <button className='bg-black text-white p-2  font-semibold rounded-lg'>
         Logout
       </button>
+      </div>
+     
     </header>
   )
 }
